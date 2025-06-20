@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Recipe</title>
+</head>
+<body>
+    <h2>Insert recipe below </h2>
+    <form method="POST">
+        <input type="text" name="title" placeholder="Recipe Title" required><br><br>
+        <textarea name="ingredients" rows="10" cols="50" placeholder="ingredients"></textarea><br><br>
+        <textarea name="instructions" rows="10" cols="50" placeholder="instructions"></textarea><br><br>
+        <textarea name="notes" rows="10" cols="50" placeholder="notes"></textarea><br><br>
+
+        <button type="submit">Save recipe</button>
+    </form>
+
+    <br>
+    <a href="{{ url_for('view_saved_pages') }}">View Saved Pages</a>
+</body>
+</html>

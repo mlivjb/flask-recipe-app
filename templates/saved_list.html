@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saved Pages</title>
+</head>
+<body>
+    <h2>Saved Pages</h2>
+    <ul>
+        {% for file in files %}
+        <li>
+            <a href="{{ url_for('load_saved_page', filename=file) }}" target="_blank">{{ file }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Back to Create Page</a>
+</body>
+</html>
